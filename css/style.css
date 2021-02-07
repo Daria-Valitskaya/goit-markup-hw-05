@@ -517,7 +517,7 @@ img {
   fill: var(--icon-color);
   border-radius: 50%;
 
-  transition-property: fill;
+  transition-property: fill, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
@@ -683,8 +683,10 @@ img {
   width: 100%;
   height: 100%;
 
+  opacity: 0;
+
   transform: translateY(100%);
-  transition-property: transform;
+  transition-property: transform, opasity;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 
@@ -692,15 +694,12 @@ img {
   font-size: 18px;
   line-height: 1.556;
   color: var(--button-text-color);
-
-  transition-property: transform;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--timing-function);
 }
 
 .portfolio-galery-link:hover .pfl-overlay,
 .portfolio-galery-link:focus .pfl-overlay {
   transform: translateY(0%);
+  opacity: 1;
 }
 
 .backdrop {
