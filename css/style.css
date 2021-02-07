@@ -517,7 +517,7 @@ img {
   fill: var(--icon-color);
   border-radius: 50%;
 
-  transition-property: background-color;
+  transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
@@ -593,8 +593,9 @@ img {
   color: var(--title-color);
   background-color: var(--button-backgroung-color);
   border-radius: 4px;
+  box-shadow: none;
 
-  transition-property: color, background-color;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
